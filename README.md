@@ -13,4 +13,10 @@ Planned features:
 -Callsign lookup to show country data
 -Multi-page frontend, showing statistics, map etc.
 
+Installation:
+
+-Clone the github directory into a folder on a server running PHP >5 and MySQL
+-Import my SQL tables into your server using PHPMyAdmin
+-Edit srslog/users/connect.php to match your MySQL server login
+
 
