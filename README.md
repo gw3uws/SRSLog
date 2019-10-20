@@ -1,10 +1,7 @@
 Program Name: SRS Log
 Description: A simple amateur radio web based logging program
 Author: Peter Barnes M0SWN
-Date: 10/01/2018
 
-
-Dev site: gw3uws.uk/srslog
 
 Planned features:
 
@@ -16,7 +13,7 @@ Planned features:
 Installation:
 
 -Clone the github directory into a folder on a server running PHP >5 and MySQL
--Import my SQL tables into your server using PHPMyAdmin
+-Import my SQL tables into your server using PHPMyAdmin (there's an import script in the database folder)
 -Edit srslog/users/connect.php to match your MySQL server login
 
 
