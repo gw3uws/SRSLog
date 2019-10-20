@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","m0swn097_pe5er","PASSWORD","m0swn097_srslog");
+$con = mysqli_connect("localhost","srslog","changeme","srslog_db");
 
 // Check connection
 if (mysqli_connect_errno())
