@@ -14,7 +14,7 @@ $rst_rcvd =  $_POST['RST_RCVD'];
 $comments =  strtoupper($_POST['Notes']);
 
 //SQL Insert Statement
-$sql = "INSERT INTO `yotamonth17` (`LogID`, `Call`, `QSO_Date`, `Time_On`, `Band`, `Mode`, `Freq`, `RST_Sent`, `RST_Rcvd`, `Notes`)
+$sql = "INSERT INTO `eventname` (`LogID`, `Call`, `QSO_Date`, `Time_On`, `Band`, `Mode`, `Freq`, `RST_Sent`, `RST_Rcvd`, `Notes`)
         VALUES(NULL, '".$callsign."', '" . $datestamp . "','" . $timestamp ."','".$band."','".$mode."','".$freq."','".$rst_sent."','".$rst_rcvd."','".$comments."')";
 
 //SQL Query / Error handler
