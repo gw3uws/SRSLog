@@ -1,16 +1,50 @@
-Program Name: SRS Log
-Description: An offline, minimal, web based Amateur Radio logging program
-Author: Peter Barnes M0SWN
+# Table of Contents
+
+- [Introduction](https://github.com/gw3uws/SRSLog/#introduction)
+	- [What is it?](https://github.com/gw3uws/SRSLog/#what-is-it)
+	- [What can it do?](https://github.com/gw3uws/SRSLog/#what-can-it-do)
+	- [What does it look like?](https://github.com/gw3uws/SRSLog/#what-does-it-look-like)
+	- [Is it safe?](https://github.com/gw3uws/SRSLog/#is-it-safe)
+- [Requirements](https://github.com/gw3uws/SRSLog/#requirements)
+- [Roadmap](https://github.com/gw3uws/SRSLog/#roadmap)
+- [Installation](https://github.com/gw3uws/SRSLog/#installation)
+
+# Introduction
+
+### What is it?
+Amateur Radio logging software, designed to run offline (there's not always internet at special event stations), and be very simple to use. 
+
+### What can it do?
+- Basic logging to a database
+- Multiple simultanious users (authenticated)
+- ADIF Export
+- "Frontend" that can be used to track progress
+
+### What does it look like?
+The UI is completely configurable through CSS (bootstrap is a feature request). Feel free to brand it however you like!
+
+#### Frontend
+![frontend](images/frontend.JPG)
+#### New Contact
+![log](images/log.JPG)
+#### ADIF Export
+![adif](images/adif.JPG)
+
+### Is it safe?
+Maybe. It's best that don't put it public facing, I can't remember if it has SQL Injection countermeasures. Most of all, if you really care about your log, think about backing it up regularly (this could be easily automated through the ADIF export script). 
+
+Passwords are hashed and salted, using BCrypt.
 
 # Requirements
 Linux box with LAMP (runs nicely on a Pi 1 or above)
 
-# Planned features
+# Roadmap
 
 - Initial Setup - MySQL tables + user accounts
 - Multiple events - get rid of hardcoded events, add user wizard for creating a new event
 - Callsign lookup to show country data
 - Multi-page frontend, showing statistics, map etc.
+- Feature Requests
 
 # Installation
 
