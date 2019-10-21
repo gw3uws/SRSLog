@@ -41,7 +41,7 @@ USE srslog_db
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'srslog'@'localhost' WITH GRANT OPTION;
 ```
-- Add a table to the database
+- Add a table to the database (Right; I don't know why this is called eventname. I basically want a fresh SQL table for each "event" the logging software is used for. Hopefully this will make more sense once I've worked through the roadmap a bit further)
 ```
 CREATE TABLE `srslog_db`.`eventname`
  ( `LogID` INT NOT NULL AUTO_INCREMENT ,
