@@ -42,9 +42,7 @@ Linux box with LAMP (runs nicely on a Pi 1 or above)
 
 - Initial Setup - MySQL tables + user accounts
 - Multiple events - get rid of hardcoded events, add user wizard for creating a new event
-- Callsign lookup to show country data
-- Multi-page frontend, showing statistics, map etc.
-- Feature Requests
+- [Feature Requests](https://github.com/gw3uws/SRSLog/issues)
 
 # Installation
 
