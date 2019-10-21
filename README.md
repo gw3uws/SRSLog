@@ -1,4 +1,4 @@
-![banner](images/srslog.svg)
+![banner]("https://rawcdn.githack.com/gw3uws/SRSLog/ae8a5690ab374fcda4dc679941d4c7d65d38b0ba/images/srslog.svg")
 
 # Table of Contents
 
