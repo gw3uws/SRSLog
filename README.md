@@ -147,8 +147,7 @@ USE srslog_db
 ```
 - Delete backdoor user
 ```
-DELETE FROM users
-WHERE username = 'backdoor';
+DELETE FROM users WHERE username = 'backdoor';
 ```
 
 __That's It! Congratulations__
