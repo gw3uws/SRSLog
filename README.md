@@ -49,9 +49,14 @@ Linux box with LAMP (runs nicely on a Pi 1 or above)
 # Installation
 
 - Setup a linux box with [LAMP](https://howtoubuntu.org/how-to-install-lamp-on-ubuntu)
-- Clone the github directory into /var/www
+- Make a html directory
 ```
 cd /var/www
+mkdir html
+cd html
+```
+- Clone the github directory
+```
 git clone https://github.com/gw3uws/SRSLog
 ```
 - Set a root password for mysql:
