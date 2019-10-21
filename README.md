@@ -133,7 +133,7 @@ exit
 ```
 - Edit srslog/users/connect.php to match your MySQL server login
 ```
-nano database/connect.php
+nano /var/www/html/database/connect.php
 ```
 - Go to http://yourip/ and hopefully you'll see the website runnign
 - Click 'login' at the top-right corner
