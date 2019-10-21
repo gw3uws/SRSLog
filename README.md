@@ -1,3 +1,5 @@
+![banner](images/srslog.svg)
+
 # Table of Contents
 
 - [Introduction](https://github.com/gw3uws/SRSLog/#introduction)
