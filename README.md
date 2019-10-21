@@ -45,9 +45,15 @@ GRANT ALL PRIVILEGES ON *.* TO 'srslog'@'localhost' WITH GRANT OPTION;
 ```
 CREATE TABLE `srslog_db`.`eventname`
  ( `LogID` INT NOT NULL AUTO_INCREMENT ,
-  `Call` TEXT NOT NULL , `QSO_Date` TEXT NOT NULL ,
-   `Time_On` TEXT NOT NULL , `Band` TEXT NOT NULL ,
-    `Mode` TEXT NOT NULL , PRIMARY KEY (`LogID`)
+   `Call` TEXT NOT NULL , 
+   `QSO_Date` TEXT NOT NULL ,
+   `Time_On` TEXT NOT NULL , 
+   `Band` TEXT NOT NULL ,
+   `Mode` TEXT NOT NULL ,
+   `Freq` TEXT NOT NULL , 
+   `RST_Sent` TEXT NOT NULL ,
+   `RST_Rcvd` TEXT NOT NULL , 
+   `Notes` TEXT NOT NULL , PRIMARY KEY (`LogID`)
  );
  ```
  - Create another table:
