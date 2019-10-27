@@ -27,7 +27,7 @@ $myfile = fopen("logbook.adi", "w") or die("Unable create ADIF file");
 $txt = "SRSLog " . gmdate('Y-m-d h:i:s \G\M\T') . "<ProgramID:6>SRSLog<eoh>\n\n";
 fwrite($myfile, $txt);
 
-$sql = "SELECT * FROM yotamonth17";
+$sql = "SELECT * FROM eventname";
 if ($result=mysqli_query($con,$sql)){
 
  while ($row = mysqli_fetch_array($result)) 
