@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // If session variable is not set it will redirect to login page
 if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
   header("location: login.php");
@@ -23,7 +23,9 @@ echo '<br><br><h1>' . $Event_name . '</h1>';
 echo "<br><br>";
 
 //Get time in HHMM 24hour UTC format
-$timestamp = gmdate("Hi");
+date_default_timezone_set('UTC');
+$timestamp = date('Hi'); //H: hours with leading zeros, i: seconds with leading zeros
+
 //Get date in YYYYMMDD format
 $datestamp = date('Ymd');
 
