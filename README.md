@@ -1,3 +1,5 @@
+![banner](https://rawcdn.githack.com/gw3uws/SRSLog/ae8a5690ab374fcda4dc679941d4c7d65d38b0ba/images/srslog.svg)
+
 # Table of Contents
 
 - [Introduction](https://github.com/gw3uws/SRSLog/#introduction)
@@ -42,16 +44,19 @@ Linux box with LAMP (runs nicely on a Pi 1 or above)
 
 - Initial Setup - MySQL tables + user accounts
 - Multiple events - get rid of hardcoded events, add user wizard for creating a new event
-- Callsign lookup to show country data
-- Multi-page frontend, showing statistics, map etc.
-- Feature Requests
+- [Feature Requests](https://github.com/gw3uws/SRSLog/issues)
 
 # Installation
 
 - Setup a linux box with [LAMP](https://howtoubuntu.org/how-to-install-lamp-on-ubuntu)
-- Clone the github directory into /var/www
+- Make a html directory
 ```
 cd /var/www
+mkdir html
+cd html
+```
+- Clone the github directory
+```
 git clone https://github.com/gw3uws/SRSLog
 ```
 - Set a root password for mysql:
@@ -128,7 +133,7 @@ exit
 ```
 - Edit srslog/users/connect.php to match your MySQL server login
 ```
-nano database/connect.php
+nano /var/www/html/database/connect.php
 ```
 - Go to http://yourip/ and hopefully you'll see the website runnign
 - Click 'login' at the top-right corner
@@ -142,8 +147,7 @@ USE srslog_db
 ```
 - Delete backdoor user
 ```
-DELETE FROM users
-WHERE username = 'backdoor';
+DELETE FROM users WHERE username = 'backdoor';
 ```
 
 __That's It! Congratulations__
