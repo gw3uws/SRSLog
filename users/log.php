@@ -46,12 +46,54 @@ echo "
 	<option value='80m'>80m</option>
 	<option value='160m'>160m</option>
 	</select>
-	<text>Mode:     </text><select name='mode'>
-	<option value='SSB'>SSB</option>
-	<option value='FM'>FM</option>
-	<option value='CW'>CW</option>
-	<option value='PKT'>Packet</option>
-	</select>
+	<text>Mode:     </text><input list='mode' name='mode' type='datalist'>
+	<datalist id='mode'>
+	<option value='AM'>Amplitude Modulation</option>
+	<option value='ARDOP'>Amateur Radio Digital Open Protocol</option>
+	<option value='ATV'>Amateur Television</option>
+	<option value='C4FM'>Yaesu Fusion</option>
+	<option value='CHIP'>Spread-Spektrum PSK</option>
+	<option value='CW'>Morse Code</option>
+	<option value='DIGITALVOICE'>Digital Voice</option>
+	<option value='DOMINO'>MFSK Chat</option>
+	<option value='DSTAR'>ICOM D-STAR</option>
+	<option value='FAX'>FAX</option>
+	<option value='FM'>Frequency Modulation</option>
+	<option value='FSK441'>FSK441</option>
+	<option value='FT8'>FT8</option>
+	<option value='HELL'>Hellschreiber </option>
+	<option value='ISCAT'>Ionospheric Scattering</option>
+	<option value='JT4'>JT4</option>
+	<option value='JT6M'>JT6M</option>
+	<option value='JT9'>JT9</option>
+	<option value='JT44'>JT44</option>
+	<option value='JT65'>JT65</option>
+	<option value='MFSK'>Multiple Frequency Shift Keying</option>
+	<option value='MSK144'>MSK144</option>
+	<option value='MT63'>MT63</option>
+	<option value='OLIVIA'>OLIVIA</option>
+	<option value='OPERA'>OPERA</option>
+	<option value='PAC'>PAC</option>
+	<option value='PAX'>PAX</option>
+	<option value='PKT'>Packet Radio</option>
+	<option value='PSK'>Phase Shift Keying</option>
+	<option value='PSK2K'>PSK2K</option>
+	<option value='Q15'>Q15</option>
+	<option value='QRA64'>QRA64</option>
+	<option value='ROS'>ROS</option>
+	<option value='RTTY'>Radio Teletype</option>
+	<option value='RTTYM'>RTTYM</option>
+	<option value='SSB'>Single Side Band</option>
+	<option value='SSTV'>Slow Scan Television</option>
+	<option value='T10'>T10</option>
+	<option value='THOR'>THOR</option>
+	<option value='THRB'>THRB</option>
+	<option value='TOR'>TOR</option>
+	<option value='V4'>V4</option>
+	<option value='WINMOR'>WINMOR</option>
+	<option value='WSPR'>Weak Signal Propagation Report</option>
+	</datalist>
+	
 	<text>QSO Date: </text><input type='text' name='qso_date' value='".$datestamp."' size='5' required>
 	<text>QSO Time: </text><input type='text' name='qso_time' id='qso_time' value='".$timestamp."' maxlength='4' size='2' required disabled>
 	<br>
