@@ -93,9 +93,9 @@ echo "
 	<option value='WINMOR'>WINMOR</option>
 	<option value='WSPR'>Weak Signal Propagation Report</option>
 	</datalist>
-	
+
 	<text>QSO Date: </text><input type='text' name='qso_date' value='".$datestamp."' size='5' required>
-	<text>QSO Time: </text><input type='text' name='qso_time' id='qso_time' value='".$timestamp."' maxlength='4' size='2' required disabled>
+	<text>QSO Time: </text><input type='text' name='qso_time' id='qso_time' maxlength='4' size='2' required>
 	<br>
 	<text>Frequency (MHz): </text><input type='text' name='Freq' style='width: 150px' required>
 	<text>RST Sent: </text><input type='number' name='RST_Sent' max='599' style='width: 75px' required>
@@ -135,7 +135,6 @@ echo "
 			var date = new Date;
 			var time = ConvertNumberToTwoDigitString(date.getUTCHours()) + ConvertNumberToTwoDigitString(date.getUTCMinutes());
 			document.getElementById('qso_time').value = time;
-			//(new Date).toTimeString().slice(0,5);
 		}
 
 		// Returns the given integer as a string and with 2 digits
