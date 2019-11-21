@@ -33,7 +33,7 @@ The UI is completely configurable through CSS (bootstrap is a feature request). 
 ![adif](images/adif.JPG)
 
 ### Is it safe?
-Maybe. It's best that don't put it public facing, I can't remember if it has SQL Injection countermeasures. Most of all, if you really care about your log, think about backing it up regularly (this could be easily automated through the ADIF export script). 
+Maybe. It's best that you don't have it public facing, I can't remember if it has SQL Injection countermeasures. Most of all, if you really care about your log, think about backing it up regularly (this could be easily automated through the ADIF export script). 
 
 Passwords are hashed and salted, using BCrypt.
 
